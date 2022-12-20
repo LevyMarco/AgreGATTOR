@@ -1,0 +1,19 @@
+---
+author: Lucas Paixão
+date:
+---
+formato de  protocolo que consegue entregar feeds sobre qualquer coisa. A partir daí, você consegue agregar essas
+informações em uma interface (web, GUI [graphical user interface]).
+# Agregador de conteúdo web
+
+Rss é um formato de  protocolo que consegue entregar feeds sobre qualquer coisa.
+A premissa da aplicação aggreGATOR é agregar essas informações em uma interface web.
+
+Começamos requisitando os dados RSS da página com a biblioteca requests, e parseando esse resultado com a
+biblioteca BeautifulSoup.
+
+À partir de então, temos uma string, que será o bloco de texto do blog. Salvamos eles em arquivos. Os mesmos serão
+carregados toda vez que iniciarmos o script.
+
+
+O script principal, por si só, chamará APLICAÇÃO, que usará a biblioteca Flask para criar páginas web formatadas. O site terá interfaces de usuário e mostrará posts salvos de blogs.
